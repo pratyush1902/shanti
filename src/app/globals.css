@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@source "../components";
+@source "../app";
+
+:root {
+  /* Exact User Color Palette */
+  --color-primary: #1E88E5;
+  --color-secondary: #4FC3F7;
+  --color-bg: #F8FAFC;
+  --color-text: #1F2937;
+  --color-success: #16A34A;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #1F2937;
+  background-color: #F8FAFC;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 600;
+  color: #1F2937;
+}
+
+/* Clean Neighborhood Clinic Card Utility */
+.clinic-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease-in-out;
+}
+
+.clinic-card:hover {
+  border-color: #93C5FD;
+  box-shadow: 0 4px 12px -2px rgba(30, 136, 229, 0.08);
+}
